@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #9cc7f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calender {
+  border-radius: 10px;
+  width: 500px;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 5px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  background-color: #3498db;
+  color: #fff;
+}
+button {
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  padding: 1px;
+}
+select {
+  font-size: 20px;
+  padding: 0px 8px;
+  border: 1px solid #3498db;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.daysweek {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+.day,
+.empty {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.empty {
+  background-color: #cdcdcd;
+}
+.day:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+.current {
+  background-color: tomato;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .calender {
+    width: 100%;
+  }
+}
